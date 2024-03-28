@@ -1,0 +1,12 @@
+
+
+CREATE TRIGGER tr_insertProduct 
+ON Products
+AFTER INSERT
+AS
+BEGIN
+    PRINT('SE NSERTARON DATOS')
+END;
+GO
+
+ALTER TABLE Products ENABLE TRIGGER tr_insertProduct;
